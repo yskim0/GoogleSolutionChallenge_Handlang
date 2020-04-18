@@ -2,14 +2,16 @@
 
 ## Handlang - ASL(American Sign Language) Education by using deep learning model
 
-### Before introducing our solution...
+<br>
+
+## Before introducing our solution...
 
 
-***We wanted to make a model suitable for my country(South of Korea), but I am sorry that we used American Sign Language (asl) because there is no proper dataset of Korean Sign Language(KSL).***
+We wanted to make a model suitable for my country(South of Korea), but I am sorry that we used American Sign Language (asl) because there is no proper dataset of Korean Sign Language(KSL).
 
 <br>
 
-### Purpose(our target to challenge)
+## Purpose(our target to challenge)
 
 In our society (at least in Korea), sign language education is very poor.
 For the Deaf and those in need of sign language, sign language is a tool that allows them to express their world like the any languages of the world.
@@ -29,7 +31,7 @@ We also wanted to show that technology can change the world into a better place.
 
 <br>
 
-### Requirements
+## Requirements
 
 ```
 flask
@@ -43,7 +45,7 @@ flask_babel
 keras
 ```
 
-### Datasets
+## Datasets
 
 Datasets we used in the deep learning model.
 
@@ -59,7 +61,7 @@ also, we used ... (in other models)
 - https://www.kaggle.com/ayuraj/asl-dataset
 
 
-### What Google technology we used
+## What Google technology we used
 
 1. Google Cloud Platform(GCP)
 : Computer Engine - GPU
@@ -84,7 +86,7 @@ We want the world to see our impact.
 
 <br>
 
-### How to run
+## How to run
 
 1. Download this repository
 
@@ -117,7 +119,7 @@ You can enjoy our project in `http://0.0.0.0:5000/`
 <br>
 
 
-### Our Challenges Before User Feedback
+## Our Challenges Before User Feedback
 
 The feedback we received was mainly related to the  accuracy of the model, so we prioritized improving the model's performance.
 
@@ -127,7 +129,7 @@ There have been many attempts related to the deep learning model, which can be s
 
 <br>
 
-### Plan for future extension 
+## Plan for future extension 
 
 Any advice would be welcome.
 
@@ -142,7 +144,7 @@ Any advice would be welcome.
 
 <br>
 
-### Team Handlang
+## Team Handlang
 
 - Yonsoo, Kim (김연수) : Ewha w.univ.
 - 
