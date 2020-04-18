@@ -127,7 +127,7 @@ The feedback we received was mainly related to the  accuracy of the model, so we
 
 There have been many attempts related to the deep learning model, which can be seen in following link.
 
-[링크]
+[our attempts before & after feedback](https://github.com/yskim0/GoogleSolutionChallenge_Handlang/blob/master/before_usr_feedback.md)
 
 <br>
 

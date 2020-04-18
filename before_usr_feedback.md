@@ -2,7 +2,8 @@
 
 The feedback we received was mainly related to the accuracy of the model, so we prioritized improving the model's performance.
 
-### about models
+## about models
+
 
 1. YOLO darknet
 
@@ -19,6 +20,10 @@ The most attempts were made at darkflow.
     - acc : 0.42
 
 
+**Feedback -> Predict performance is poor.**
+
+-----
+
 - YOLO_experiment_2
     - pretrained weight - hand tracking model (https://github.com/Abdul-Mukit/dope_with_hand_tracking)
     - [a~y](excluding `i`) 600 images each. 140 epochs
@@ -33,6 +38,12 @@ The most attempts were made at darkflow.
     - ![056](/img/56.png)
 
 
+**Feedback -> It is still not a satisfactory performance.**
+
+
+----
+
+
 2. Inception-v3
 
 We tried transfer learning by using `inception-v3`.
@@ -41,6 +52,8 @@ We tried transfer learning by using `inception-v3`.
 - test acc. : about 88%
     - but not that much at real-time...
     - ![088](/img/88.png)
+
+
 3. Tensorflow-Object-Detection-API
 
 We tried transfer learning by using `fast r-cnn`.
@@ -50,10 +63,18 @@ We tried transfer learning by using `fast r-cnn`.
         - poor performance
 
 
+**Self-feedback: It is still not a satisfactory performance.**
+
+----
+
 4. Finally Custom CNN model(our current model)!
 
+**Feedback : Great Prediction!**
 
-### about Web
+----
+
+
+## about Web
 
 The feedback said that it would be good to have a quiz, so we made a quiz that can test after learning oneself.
 

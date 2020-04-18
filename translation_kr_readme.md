@@ -124,7 +124,8 @@ Run `python app.py` or `python3 app.py`
 
 딥러닝 모델 관련하여 여러가지 시도를 했는데 이는 링크를 타고 들어가면 볼 수 있습니다.
 
-[링크]
+
+[피드백 받기 전후 시도들](https://github.com/yskim0/GoogleSolutionChallenge_Handlang/blob/master/before_usr_feedback.md)
 
 <br>
 
