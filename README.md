@@ -1,3 +1,150 @@
-# GoogleSolutionChallenge_Handlang
+# DSC Solution Challenge
 
-pip install -r requirements.txt
+## Handlang - ASL(American Sign Language) Education by using deep learning model
+
+### Before introducing our solution...
+
+
+***We wanted to make a model suitable for my country(South of Korea), but I am sorry that we used American Sign Language (asl) because there is no proper dataset of Korean Sign Language(KSL).***
+
+<br>
+
+### Purpose(our target to challenge)
+
+In our society (at least in Korea), sign language education is very poor.
+For the Deaf and those in need of sign language, sign language is a tool that allows them to express their world like the any languages of the world.
+
+
+However, the education currently being provided does not correspond to that expectation.
+
+**Through technology, we can break down social barriers by providing sign language education for the deaf and those in need of sign language.**
+
+Also, It is limited to ASL now, but if we have enough time with other countries' sign language datasets, we will create models that fit many countries. This will be available to users in the wider world.
+
+It is our challenge to create sign language education that everyone can use, free of any restrictions such as money, environment, etc.
+
+Our solution may not fall short of human education, but it reminds us of the need for innovation in sign language education.
+
+We also wanted to show that technology can change the world into a better place.
+
+<br>
+
+### Requirements
+
+```
+flask
+numpy
+matplotlib
+tensorflow==1.15.2
+opencv-python-headless
+cython
+Pillow
+flask_babel
+keras
+```
+
+### Datasets
+
+Datasets we used in the deep learning model.
+
+
+- https://www.kaggle.com/grassknoted/asl-alphabet
+    - It was used in our best model.
+
+<br>
+
+also, we used ... (in other models)
+- https://www.kaggle.com/rajarshighoshal/asltestimages
+- https://www.kaggle.com/muhammadkhalid/sign-language-for-alphabets
+- https://www.kaggle.com/ayuraj/asl-dataset
+
+
+### What Google technology we used
+
+1. Google Cloud Platform(GCP)
+: Computer Engine - GPU
+
+- GPU required to train the model
+    - GPU of GCP was very helpful when training our deep learning model.
+    - In GCP, we can customize the number of GPU and what GPU device(e.g. Tesla k-80) be used.
+    - Moreover, GCP helped us plan by calculating the expected cost.
+
+
+- Cloud services that are good for a team to manage
+    - It was easy to manage as a team because GCP computer engine can be shared with team members, unlike what is managed by local server.
+
+2. Tensorflow
+: deep learning model
+
+- The best of machine learning platform
+- All the team members had studied together before Solution Challenge.
+- Provide many APIs related to deep learning model
+    - We were able to do a lot of experiments. (inception-v3, fast-rcnn, custom CNN model)
+We want the world to see our impact.
+
+<br>
+
+### How to run
+
+1. Download this repository
+
+`git clone https://github.com/yskim0/DSC_Solution_Challenge.git`
+
+2. Install requirements
+
+We proceeded under the *Anaconda environment*. We recommned to proceed in the *virtual environment.*
+
+- Go to the downloaded folder(by step1)
+
+`cd GoogleSolutionChallenge_Handlang`
+
+- install requirements
+
+`pip install -r requirements.txt`
+
+3. Run!
+
+Run `python app.py` or `python3 app.py`
+
+Installation is just finished!
+You can enjoy our project in `http://0.0.0.0:5000/`
+
+![homepage](/img/homepage.png)
+
+
+<br>
+
+<br>
+
+
+### Our Challenges Before User Feedback
+
+The feedback we received was mainly related to the  accuracy of the model, so we prioritized improving the model's performance.
+
+There have been many attempts related to the deep learning model, which can be seen in following link.
+
+[링크]
+
+<br>
+
+### Plan for future extension 
+
+Any advice would be welcome.
+
+- Deep learning model
+    - Improve performance by preprocessing and learning various datasets
+    - Add (0~9) labels to model
+    - Create KSL model if conditions (e.g. dataset) are met
+
+- Web page
+    - Make UI/UX better
+
+
+<br>
+
+### Team Handlang
+
+- Yonsoo, Kim (김연수) : Ewha w.univ.
+- 
+- 
+- 
