@@ -27,7 +27,9 @@ It is our challenge to create sign language education that everyone can use, fre
 
 Our solution may not fall short of human education, but it reminds us of the need for innovation in sign language education.
 
-We also wanted to show that technology can change the world into a better place.
+We wanted to show that technology can change the world into a better place.
+
+We hope this project will help people become interested in sign language education and further develop our ideas.
 
 <br>
 
@@ -82,7 +84,6 @@ also, we used ... (in other models)
 - All the team members had studied together before Solution Challenge.
 - Provide many APIs related to deep learning model
     - We were able to do a lot of experiments. (inception-v3, fast-rcnn, custom CNN model)
-We want the world to see our impact.
 
 <br>
 
@@ -150,3 +151,8 @@ Any advice would be welcome.
 - 
 - 
 - 
+
+
+----
+
+**We want the world to see our impact.**
