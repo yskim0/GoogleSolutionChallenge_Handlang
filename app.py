@@ -118,14 +118,15 @@ def gen(camera):
                 prediction = model.predict(image)
 
                 target_idx_for_predict = target_idx.get_idx()
-                print("타겟예측: ", target_idx_for_predict, ": ", prediction[0][target_idx_for_predict])
+                print("타겟예측: ", prediction[0][target_idx_for_predict])
 
                 if np.argmax(prediction[0]) == 1:
                     result = get_label(np.argmax(prediction[0]))
+
                 elif prediction[0][target_idx_for_predict] > 0: 
                     result = get_label(target_idx_for_predict)
                 else:
-                    result = ''
+                    result = get_label(np.argmax(prediction[0]))
 
                 predict_label.set_label(result)
 
@@ -200,20 +201,25 @@ def return_label():
         predict_result = {
             'status': 0,
             'info': 'not detected',
-            'label': ''
+            'label': '',
+            'lang_code': session['language']
+        
         }
     elif label != value:
         predict_result = {
             'status': 0,
             'info': gettext('predict_incorrect'),
-            'label': label
+            'label': label,
+            'lang_code': session['language']
+
         }
         print("틀림!")
     else:
         predict_result = {
             'status': 1,
             'info': gettext('predict_correct'),
-            'label': label
+            'label': label,
+            'lang_code': session['language']
         }
 
     # result 의 status 값이 1이면 참 -> main.js 에서 correct 값 증가

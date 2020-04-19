@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2020-03-29 18:56+0900\n"
+"POT-Creation-Date: 2020-04-19 18:08+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
 
-#: app.py:163
+#: app.py:211
 msgid "predict_incorrect"
 msgstr ""
 
-#: app.py:170
+#: app.py:220
 msgid "predict_correct"
 msgstr ""
 
@@ -125,23 +125,15 @@ msgstr ""
 msgid "headline2"
 msgstr ""
 
-#: templates/index.html:10
-msgid "aboutUs"
-msgstr ""
-
-#: templates/index.html:21
+#: templates/index.html:20
 msgid "asl_practice"
 msgstr ""
 
-#: templates/index.html:26
-msgid "number_practice"
-msgstr ""
-
-#: templates/index.html:32
+#: templates/index.html:25
 msgid "asl_quiz"
 msgstr ""
 
-#: templates/layout.html:9 templates/layout.html:45 templates/layout.html:77
+#: templates/layout.html:9 templates/layout.html:45 templates/layout.html:74
 msgid "handlang_title"
 msgstr ""
 
@@ -150,10 +142,6 @@ msgid "nav_aslPractice"
 msgstr ""
 
 #: templates/layout.html:55
-msgid "nav_numberPractice"
-msgstr ""
-
-#: templates/layout.html:58
 msgid "nav_quiz"
 msgstr ""
 
@@ -189,7 +177,15 @@ msgstr ""
 msgid "go_practice"
 msgstr ""
 
-#: templates/quiz.html:59
+#: templates/quiz.html:29
+msgid "question"
+msgstr ""
+
+#: templates/quiz.html:29
+msgid "question_2"
+msgstr ""
+
+#: templates/quiz.html:58
 msgid "submit_quiz"
 msgstr ""
 
