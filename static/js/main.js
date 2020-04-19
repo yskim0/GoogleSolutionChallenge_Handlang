@@ -79,7 +79,7 @@ function ajax_prediction(save_langcode){
       	else	{
       		correct++;
       		console.log("플러스");
-      		if(correct === 2)	{
+      		if(correct === 3)	{
       			check_correct(result.lang_code);
       			correct = 0;
       		}

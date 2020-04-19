@@ -8,33 +8,9 @@
                 <!--            img Label-->
                 <img style="width:90%; height:auto; margin-top: 10%;" src="{{ img }}">
                 <p id="topic"
-                   style=" width:100%; height: 10%; font-size: 200%; text-align: center;"> {{ alphabet }} </p>
+                   style=" width:100%; height: 10%; font-size: 400%; text-align: center;"> {{ alphabet }} </p>
                 <!--          ASL image-->
-                <!-- <div class="col-sm-6"> -->
-
-                    <!--          ok 싸인 by 지영언니-->
-    
-                    <table class="table table-lg table-bordered table-warning text-center">
-                        <thead>
-                        <tr>
-                            <td><img style="min-width: 50px" id="check_table_1" src="../static/img/expressioness.png" class="w-25" alt=""/></td>
-                            <td><img style="min-width: 50px" id="check_table_2" src="../static/img/expressioness.png" class="w-25" alt=""/></td>
-                            <td><img style="min-width: 50px" id="check_table_3" src="../static/img/expressioness.png" class="w-25" alt=""/></td>
-                            <td><img style="min-width: 50px" id="check_table_4" src="../static/img/expressioness.png" class="w-25" alt=""/></td>
-                        </tr>
-                        </thead>
-                        <thead>
-                        <tr>
-                            <td><img style="min-width: 50px" id="check_table_5" src="../static/img/expressioness.png" class="w-25" alt=""/></td>
-                            <td><img style="min-width: 50px" id="check_table_6" src="../static/img/expressioness.png" class="w-25" alt=""/></td>
-                            <td><img style="min-width: 50px" id="check_table_7" src="../static/img/expressioness.png" class="w-25" alt=""/></td>
-                            <td><img style="min-width: 50px" id="check_table_8" src="../static/img/expressioness.png" class="w-25" alt=""/></td>
-                        </tr>
-                        </thead>
-                    </table>
-    
-                <!-- </div> -->
-                <br>
+                <br><br><br>
             </div>
             <!--          webcam -->
             <div class="col-sm-6">
@@ -55,26 +31,48 @@
         <!--          경계선-->
         <hr style="border: 0; height: 3px; background: #ccc;">
 
-        <!-- <div class="row">
-            <div class="col-sm-6">
-                           알파벳 선택하기 버튼 -->
-                <!-- <a id="btn_practice_asl" class="btn btn-primary btn-block p-3" href="{{ url_for('practice_asl') }}"> {{_('go_practiceAsl')}}</a> -->
-            <!-- </div>
-        </div> -->
-<br><br>
         <div class="row">
-            <div class="col-sm-4">
+            <div class="col-sm-6">
+                <!--            알파벳 선택하기 버튼-->
+                <a id="btn_practice_asl" class="btn btn-primary btn-block p-3" href="{{ url_for('practice_asl') }}"> {{_('go_practiceAsl')}}</a>
+            </div>
+
+            <div class="col-sm-6">
+
+                <!--          ok 싸인 by 지영언니-->
+
+                <table class="table table-lg table-bordered table-warning text-center">
+                    <thead>
+                    <tr>
+                        <td><img style="min-width: 50px" id="check_table_1" src="../static/img/expressioness.png" class="w-25" alt=""/></td>
+                        <td><img style="min-width: 50px" id="check_table_2" src="../static/img/expressioness.png" class="w-25" alt=""/></td>
+                        <td><img style="min-width: 50px" id="check_table_3" src="../static/img/expressioness.png" class="w-25" alt=""/></td>
+                        <td><img style="min-width: 50px" id="check_table_4" src="../static/img/expressioness.png" class="w-25" alt=""/></td>
+                    </tr>
+                    </thead>
+                    <thead>
+                    <tr>
+                        <td><img style="min-width: 50px" id="check_table_5" src="../static/img/expressioness.png" class="w-25" alt=""/></td>
+                        <td><img style="min-width: 50px" id="check_table_6" src="../static/img/expressioness.png" class="w-25" alt=""/></td>
+                        <td><img style="min-width: 50px" id="check_table_7" src="../static/img/expressioness.png" class="w-25" alt=""/></td>
+                        <td><img style="min-width: 50px" id="check_table_8" src="../static/img/expressioness.png" class="w-25" alt=""/></td>
+                    </tr>
+                    </thead>
+                </table>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
                 {% if previous_topic|length %}
                     <a id="btn_previous" class="btn btn-success btn-block p-6"
                        href="{{ url_for('practice', element=previous_topic) }}">{{_('previous')}}</a>
                 {% endif %}
             </div>
-            <div class="col-sm-4">
-                <a id="btn_practice_asl" class="btn btn-primary btn-block p-6" href="{{ url_for('practice_asl') }}"> {{_('go_practiceAsl')}}</a>
 
-            </div>
-
-            <div class="col-sm-4">
+            <div class="col-sm-6">
                 <a id="btn_next" class="btn btn-success btn-block p-6" href="{{ url_for('practice', element=next_topic) }}">{{_('next')}}</a>
             </div>
 
