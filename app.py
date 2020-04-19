@@ -201,20 +201,25 @@ def return_label():
         predict_result = {
             'status': 0,
             'info': 'not detected',
-            'label': ''
+            'label': '',
+            'lang_code': session['language']
+        
         }
     elif label != value:
         predict_result = {
             'status': 0,
             'info': gettext('predict_incorrect'),
-            'label': label
+            'label': label,
+            'lang_code': session['language']
+
         }
         print("틀림!")
     else:
         predict_result = {
             'status': 1,
             'info': gettext('predict_correct'),
-            'label': label
+            'label': label,
+            'lang_code': session['language']
         }
 
     # result 의 status 값이 1이면 참 -> main.js 에서 correct 값 증가
