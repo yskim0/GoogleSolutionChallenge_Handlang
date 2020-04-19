@@ -118,15 +118,14 @@ def gen(camera):
                 prediction = model.predict(image)
 
                 target_idx_for_predict = target_idx.get_idx()
-                print("타겟예측: ", prediction[0][target_idx_for_predict])
+                print("타겟예측: ", target_idx_for_predict, ": ", prediction[0][target_idx_for_predict])
 
                 if np.argmax(prediction[0]) == 1:
                     result = get_label(np.argmax(prediction[0]))
-
                 elif prediction[0][target_idx_for_predict] > 0: 
                     result = get_label(target_idx_for_predict)
                 else:
-                    result = get_label(np.argmax(prediction[0]))
+                    result = ''
 
                 predict_label.set_label(result)
 
