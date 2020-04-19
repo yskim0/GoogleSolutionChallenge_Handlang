@@ -17,7 +17,7 @@
             <!-- 틀린 문제 : {{incorrect_questions}} -->
             <span class="border-bottom" style="margin-right:50px;">{{_('result_incorrect_list')}} </span>                
             {% for idx in incorrect_questions %}
-                <a href="/practice?element={{idx}}">{{idx}}</a> &nbsp;
+                <a href="/practice?element={{idx.lower()}}">{{idx}}</a> &nbsp;
             {% endfor %}
 
         {% endif %}
