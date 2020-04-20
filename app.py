@@ -6,7 +6,8 @@ import cv2
 import json
 import random
 from flask_babel import Babel, gettext
-
+from datetime import datetime
+import os
 
 app = Flask(__name__)
 babel = Babel(app)
@@ -17,6 +18,33 @@ app.config['lang_code'] = ['en', 'ko']
 model = load_model('model/handlang_model_4.h5')
 print("Loaded model from disk")
 
+
+# crop_img 엉키지 않게
+class Microsecond(object):
+    def __init__(self):
+        dt = datetime.now()
+        self.microsecond = dt.microsecond
+
+    
+    def get_path_name(self):
+        return 'model/' + str(self.microsecond)
+
+crop_img_origin_path = Microsecond()
+default_img = cv2.imread('model/crop_img.jpg')
+
+# 새로운 폴더 만들기!
+try:
+    if not(os.path.isdir(crop_img_origin_path.get_path_name())):
+        os.makedirs(os.path.join(crop_img_origin_path.get_path_name()))
+except OSError as e:
+    if e.errno != errno.EEXIST:
+        print("Failed to create directory!!!!!")
+        raise
+
+# make directory
+origin_path = crop_img_origin_path.get_path_name() + '/crop_img.jpg'
+cv2.imwrite(origin_path, default_img)
+    
 # h5 모델 
 def get_label(idx):
     label = ["A", "B", "C", "D", "E", "F", "G",
@@ -108,10 +136,11 @@ def gen(camera):
                 cv2.rectangle(img, (250,250), (600,600), (000,51,51), 2)
 
                 crop_img = img[250:600, 250:600]
-                cv2.imwrite('model/crop_img.jpg', crop_img)
+                crop_img_path = crop_img_origin_path.get_path_name() + '/crop_img.jpg'
+                cv2.imwrite(crop_img_path, crop_img)
                 # # print(crop_img)
                 # result = model_predict()
-                image = load_img('model/crop_img.jpg', target_size=(64,64))
+                image = load_img(crop_img_path, target_size=(64,64))
                 image = img_to_array(image)
                 image = image.reshape((1, image.shape[0], image.shape[1], image.shape[2]))
 
@@ -126,7 +155,7 @@ def gen(camera):
                 elif prediction[0][target_idx_for_predict] > 0: 
                     result = get_label(target_idx_for_predict)
                 else:
-                    result = get_label(np.argmax(prediction[0]))
+                    result = ''
 
                 predict_label.set_label(result)
 
