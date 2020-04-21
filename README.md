@@ -4,10 +4,19 @@
 
 <br>
 
+
 ## Before introducing our solution...
 
 
 We wanted to make a model suitable for my country(South of Korea), but I am sorry that we used American Sign Language (asl) because there is no proper dataset of Korean Sign Language(KSL).
+
+<br>
+
+## Demo
+
+Watch a short demo video!
+
+[demo video](https://youtu.be/LaTwFHh8_48)
 
 <br>
 
@@ -138,10 +147,12 @@ Any advice would be welcome.
 - Deep learning model
     - Improve performance by preprocessing and learning various datasets
     - Add (0~9) labels to model
+    - Add essential words / expressions
     - Create KSL model if conditions (e.g. dataset) are met
 
 - Web page
     - Make UI/UX better
+    - Deploy ! (not local service)
 
 
 <br>
