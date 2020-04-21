@@ -60,7 +60,7 @@ keras
 
 Datasets we used in the deep learning model.
 
-In addition, we exclude `i,z` since they require movement.
+In addition, we exclude `j,z` since they require movement.
 
 - https://www.kaggle.com/grassknoted/asl-alphabet
     - It was used in our best model.

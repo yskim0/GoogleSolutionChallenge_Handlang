@@ -48,7 +48,7 @@ cv2.imwrite(origin_path, default_img)
 # h5 모델 
 def get_label(idx):
     label = ["A", "B", "C", "D", "E", "F", "G",
-            "H", "J", "K", "L", "M", "N", "O", "P", "Q",
+            "H", "I", "K", "L", "M", "N", "O", "P", "Q",
             "R", "S", "T", "U", "V", "W", "X", "Y",
             "del", "nothing", "space"]
     return label[idx]
@@ -96,7 +96,7 @@ def get_locale():
 
 
 def get_alphabet_list():
-    alphabet_list = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'o',
+    alphabet_list = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'k', 'l', 'm', 'n', 'o',
                      'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y']
 
     return alphabet_list
