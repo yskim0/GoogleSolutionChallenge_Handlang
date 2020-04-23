@@ -101,7 +101,7 @@ also, we used ... (in other models)
 
 1. Download this repository
 
-`git clone https://github.com/yskim0/DSC_Solution_Challenge.git`
+`git clone https://github.com/yskim0/GoogleSolutionChallenge_Handlang.git`
 
 2. Install requirements
 

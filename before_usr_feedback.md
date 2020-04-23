@@ -26,14 +26,14 @@ The most attempts were made at darkflow.
 
 - YOLO_experiment_2
     - pretrained weight - hand tracking model (https://github.com/Abdul-Mukit/dope_with_hand_tracking)
-    - [a~y](excluding `i`) 600 images each. 140 epochs
+    - [a~y](excluding `j`) 600 images each. 140 epochs
     - acc : 0.47
     - ![047](/img/47.png/)
 
 
 - YOLO_experiment_3
     - pretrained weight - yolov2-tiny.weight(https://pjreddie.com/darknet/yolov2/)
-    - [a~y](excluding `i`) 600 images each. 220 epochs
+    - [a~y](excluding `j`) 600 images each. 220 epochs
     - acc : 0.56
     - ![056](/img/56.png)
 
@@ -48,7 +48,7 @@ The most attempts were made at darkflow.
 
 We tried transfer learning by using `inception-v3`.
 
-- [a~y](excluding `i`) 600 images each. 1000 steps
+- [a~y](excluding `j`) 600 images each. 1000 steps
 - test acc. : about 88%
     - but not that much at real-time...
     - ![088](/img/88.png)
@@ -57,7 +57,7 @@ We tried transfer learning by using `inception-v3`.
 3. Tensorflow-Object-Detection-API
 
 We tried transfer learning by using `fast r-cnn`.
-- [a~y](excluding `i`) 600 images each. 6000 steps
+- [a~y](excluding `j`) 600 images each. 6000 steps
 - test acc. : about 80%
     - not test by images, but test by webcam.
         - poor performance
