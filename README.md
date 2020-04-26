@@ -60,7 +60,7 @@ keras
 
 Datasets we used in the deep learning model.
 
-In addition, we exclude `i,z` since they require movement.
+In addition, we exclude `j,z` since they require movement.
 
 - https://www.kaggle.com/grassknoted/asl-alphabet
     - It was used in our best model.
@@ -101,7 +101,7 @@ also, we used ... (in other models)
 
 1. Download this repository
 
-`git clone https://github.com/yskim0/DSC_Solution_Challenge.git`
+`git clone https://github.com/yskim0/GoogleSolutionChallenge_Handlang.git`
 
 2. Install requirements
 
@@ -121,6 +121,10 @@ Run `python app.py` or `python3 app.py`
 
 Installation is just finished!
 You can enjoy our project in `http://0.0.0.0:5000/`
+
++) In addition, you can choose 'English' or 'Korean(한국어)' translation through the navigation bar.
+
+
 
 ![homepage](/img/homepage.png)
 
@@ -160,9 +164,13 @@ Any advice would be welcome.
 ## Team Handlang
 
 - Yonsoo, Kim (김연수) : Ewha w.univ.
-- 
-- 
-- 
+    - [Github](https://github.com/yskim0)
+- Jiyoung, Shin (신지영) : Ewha w.univ.
+    - [Github](https://github.com/Turtlefromocean)
+- Hyunju, Seo (서현주) : Ewha w.univ.
+    - [Github](https://github.com/seohsj)
+- Suhyune, Son (손수현) : Ewha w.univ.
+    - [Github](https://github.com/sonsuhyune)
 
 
 ----
