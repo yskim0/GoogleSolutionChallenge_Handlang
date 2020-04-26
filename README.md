@@ -105,7 +105,7 @@ also, we used ... (in other models)
 
 2. Install requirements
 
-We proceeded under the *Anaconda environment*. We recommned to proceed in the *virtual environment.*
+We proceeded under the *Anaconda environment*. We recommend to proceed in the *virtual environment.*
 
 - Go to the downloaded folder(by step1)
 
